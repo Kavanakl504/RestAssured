@@ -1,0 +1,371 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 2,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 554177600,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "the user sets the endpoint to \"base\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"base\"",
+                  "offset": 30
+                }
+              ],
+              "location": "crud.APIStepDev.sets_the(java.lang.String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-03-22T03:54:13.109Z",
+        "line": 5,
+        "name": "Get employee record",
+        "description": "",
+        "id": "verify-all-get-and-post-requests;get-employee-record",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2010963200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user makes a get call to \"endpoint\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"endpoint\"",
+                  "offset": 25
+                }
+              ],
+              "location": "crud.APIStepDev.makes_a_get_call_to_with_below_attributes(java.lang.String,java.util.List\u003cjava.util.Map\u003cjava.lang.String, java.lang.String\u003e\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "AttributType",
+                  "AttributeValue"
+                ]
+              },
+              {
+                "cells": [
+                  "page",
+                  "1"
+                ]
+              },
+              {
+                "cells": [
+                  "page",
+                  "2"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I receive valid HTTP Response 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 30
+                }
+              ],
+              "location": "crud.APIStepDev.i_receive_valid_HTTP_Response_code(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 2,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "the user sets the endpoint to \"base\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"base\"",
+                  "offset": 30
+                }
+              ],
+              "location": "crud.APIStepDev.sets_the(java.lang.String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-03-22T03:54:15.861Z",
+        "line": 13,
+        "name": "Create record",
+        "description": "",
+        "id": "verify-all-get-and-post-requests;create-record",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 934058400,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user makes a POST call to \"endpoint\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"endpoint\"",
+                  "offset": 26
+                }
+              ],
+              "location": "crud.APIStepDev.user_makes_a_POST_call_to(java.lang.String,java.util.Map\u003cjava.lang.String, java.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "name",
+                  "job"
+                ]
+              },
+              {
+                "cells": [
+                  "Kavana",
+                  "leader"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I receive valid HTTP Response 201",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 30
+                }
+              ],
+              "location": "crud.APIStepDev.i_receive_valid_HTTP_Response_code(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 2,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "the user sets the endpoint to \"base\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"base\"",
+                  "offset": 30
+                }
+              ],
+              "location": "crud.APIStepDev.sets_the(java.lang.String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-03-22T03:54:16.833Z",
+        "line": 19,
+        "name": "update the created user",
+        "description": "",
+        "id": "verify-all-get-and-post-requests;update-the-created-user",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 917561400,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "user makes a PUT request to \"endpoint2\" with following data",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"endpoint2\"",
+                  "offset": 28
+                }
+              ],
+              "location": "crud.APIStepDev.user_makes_a_PUT_request_to_with_following_data(java.lang.String,java.util.Map\u003cjava.lang.String, java.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "name",
+                  "job"
+                ]
+              },
+              {
+                "cells": [
+                  "Kavana",
+                  "Engineer"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I receive valid HTTP Response 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 30
+                }
+              ],
+              "location": "crud.APIStepDev.i_receive_valid_HTTP_Response_code(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 2,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 15622900,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "the user sets the endpoint to \"base\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"base\"",
+                  "offset": 30
+                }
+              ],
+              "location": "crud.APIStepDev.sets_the(java.lang.String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-03-22T03:54:17.781Z",
+        "line": 25,
+        "name": "Delete all the data",
+        "description": "",
+        "id": "verify-all-get-and-post-requests;delete-all-the-data",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "user makes a DELETE request to \"endpoint2\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"endpoint2\"",
+                  "offset": 31
+                }
+              ],
+              "location": "crud.APIStepDev.user_makes_a_DELETE_request_to(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 940192000,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "user validates for the content-length",
+            "match": {
+              "location": "crud.APIStepDev.user_validates_for_the_content_length(java.util.Map\u003cjava.lang.String, java.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Content-Length",
+                  "0"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1029200,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "I receive valid HTTP Response 204",
+            "match": {
+              "arguments": [
+                {
+                  "val": "204",
+                  "offset": 30
+                }
+              ],
+              "location": "crud.APIStepDev.i_receive_valid_HTTP_Response_code(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Verify all GET and POST requests",
+    "description": "",
+    "id": "verify-all-get-and-post-requests",
+    "keyword": "Feature",
+    "uri": "file:resources/features/ApiDemo.feature",
+    "tags": []
+  }
+]
